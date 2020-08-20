@@ -50,15 +50,16 @@ body {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(240, 135, 0, 0), rgba(0, 0, 0, 0.3)), url("../img/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg");
+  background-image: linear-gradient(to right bottom, black, rgba(0, 0, 0, 0.3)), url("../img/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 4rem;
 }
 .header__content--title {
-  color: #f49f0a;
+  color: #e61f5b;
   font-size: 10rem;
   text-align: center;
 }
@@ -98,6 +99,7 @@ nav {
 
 .nav-links li {
   list-style: none;
+  transition: all 0.4s ease;
 }
 
 .nav-links a {
@@ -105,6 +107,10 @@ nav {
   text-decoration: none;
   font-weight: 600;
   font-size: 1.6rem;
+}
+
+.nav-links a:hover {
+  border-bottom: 0.2rem solid #e61f5b;
 }
 
 .burger {
@@ -176,6 +182,64 @@ nav {
 
 .toggle .line3 {
   transform: rotate(45deg) translate(-0.5rem, -0.6rem);
+}
+
+.intro {
+  display: flex;
+  background-color: #ededed;
+}
+@media only screen and (max-width: 700px) {
+  .intro {
+    flex-direction: column;
+  }
+}
+.intro__title {
+  width: 50%;
+  padding: 3rem;
+}
+@media only screen and (max-width: 700px) {
+  .intro__title {
+    width: 100%;
+  }
+}
+.intro__title h2 {
+  font-size: 4rem;
+  text-align: right;
+  color: #141939;
+}
+@media only screen and (max-width: 700px) {
+  .intro__title h2 {
+    text-align: left;
+  }
+}
+.intro__content {
+  width: 50%;
+  padding: 3rem;
+}
+@media only screen and (max-width: 700px) {
+  .intro__content {
+    width: 100%;
+  }
+}
+.intro__content p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #141939;
+}
+.intro__button {
+  border: 0.5rem solid #e61f5b;
+  background-color: rgba(0, 0, 0, 0);
+  color: #e61f5b;
+  padding: 2rem 8rem;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+.intro__button:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #e61f5b;
 }
 
 .main {

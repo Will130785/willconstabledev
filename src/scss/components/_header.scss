@@ -1,18 +1,19 @@
 .header {
     height: 100vh;
     background-image: linear-gradient(to right bottom,
-    rgba(240, 135, 0, 0),
+    rgba(0, 0, 0, 1),
      rgba(0, 0, 0, 0.3)), url("../img/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4rem;
 
     &__content {
 
         &--title {
-            color: #f49f0a;
+            color: #e61f5b;
             font-size: 10rem;
             text-align: center;
 

@@ -23,6 +23,7 @@ nav {
 
 .nav-links li {
     list-style: none;
+    transition: all .4s ease;
 }
 
 .nav-links a {
@@ -30,6 +31,10 @@ nav {
     text-decoration: none;
     font-weight: 600;
     font-size: 1.6rem;
+}
+
+.nav-links a:hover {
+    border-bottom: .2rem solid #e61f5b;
 }
 
 .burger {
@@ -43,6 +48,7 @@ nav {
     margin: .5rem;
     transition: all 0.4s ease;
 }
+
 
 @media only screen and (max-width: 1000px) {
     .nav-links {
