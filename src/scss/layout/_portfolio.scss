@@ -1,0 +1,52 @@
+.portfolio {
+    height: 70rem;
+    background-color: #ededed;
+    margin-bottom: 4rem;
+
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 40%;
+
+        h2 {
+            font-size: 6rem;
+        }
+
+        h3 {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__snaps {
+        height: 60%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        @media only screen and (max-width: 900px) {
+            grid-template-columns: 1fr;
+        }
+
+        &--card {
+            background-size: cover;
+            background-position: center;
+
+            &-1 {
+                background-image: url("../img/andras-vas-Bd7gNnWJBku-unsplash.jpg");
+
+            }
+
+            &-2 {
+                background-image: url("../img/daniel-korpai-8GDCzWrcE3M-unsplash.jpg");
+
+            }
+
+            &-3 {
+                background-image: url("../img/niclas-illg-wzVQp_NRIHg-unsplash.jpg");
+
+            }
+        }
+    }
+}

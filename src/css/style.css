@@ -188,6 +188,7 @@ nav {
 
 .about {
   background-color: #e61f5b;
+  margin-bottom: 4rem;
 }
 .about__header {
   text-align: center;
@@ -213,12 +214,19 @@ nav {
 .about__svg {
   height: 5rem;
   width: 5rem;
+  margin-bottom: 5rem;
+  transition: all 1s ease;
+}
+.about__svg:hover {
+  height: 6rem;
+  width: 6rem;
 }
 .about__blurb {
   padding: 5rem;
 }
 .about__blurb h4 {
   font-size: 2rem;
+  margin-bottom: 3rem;
 }
 .about__blurb p {
   font-size: 1.8rem;
@@ -289,6 +297,122 @@ nav {
   padding: 0 3rem;
   position: relative;
   top: 11rem;
+}
+
+.portfolio {
+  height: 70rem;
+  background-color: #ededed;
+  margin-bottom: 4rem;
+}
+.portfolio__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 40%;
+}
+.portfolio__heading h2 {
+  font-size: 6rem;
+}
+.portfolio__heading h3 {
+  font-size: 2.5rem;
+}
+.portfolio__snaps {
+  height: 60%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media only screen and (max-width: 900px) {
+  .portfolio__snaps {
+    grid-template-columns: 1fr;
+  }
+}
+.portfolio__snaps--card {
+  background-size: cover;
+  background-position: center;
+}
+.portfolio__snaps--card-1 {
+  background-image: url("../img/andras-vas-Bd7gNnWJBku-unsplash.jpg");
+}
+.portfolio__snaps--card-2 {
+  background-image: url("../img/daniel-korpai-8GDCzWrcE3M-unsplash.jpg");
+}
+.portfolio__snaps--card-3 {
+  background-image: url("../img/niclas-illg-wzVQp_NRIHg-unsplash.jpg");
+}
+
+.start {
+  background-color: #ededed;
+  text-align: center;
+}
+.start__content {
+  padding: 5rem 0;
+}
+.start__content h2 {
+  font-size: 6rem;
+}
+.start__content--button {
+  border: 0.5rem solid #e61f5b;
+  background-color: rgba(0, 0, 0, 0);
+  color: #e61f5b;
+  padding: 2rem 8rem;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  transition: all 0.4s ease;
+  margin-top: 5rem;
+}
+.start__content--button:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #e61f5b;
+}
+
+.testimonials {
+  background-color: #000;
+  color: #e61f5b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+@media only screen and (max-width: 700px) {
+  .testimonials {
+    flex-direction: column;
+  }
+}
+.testimonials__heading {
+  width: 50%;
+  text-align: center;
+  padding: 3rem;
+}
+@media only screen and (max-width: 700px) {
+  .testimonials__heading {
+    width: 100%;
+  }
+}
+.testimonials__heading h2 {
+  font-size: 6rem;
+}
+.testimonials__content {
+  width: 50%;
+  padding: 3rem;
+}
+@media only screen and (max-width: 700px) {
+  .testimonials__content {
+    width: 100%;
+  }
+}
+.testimonials__content--main {
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+}
+.testimonials__content--name {
+  font-size: 2rem;
+}
+.testimonials__content--pos {
+  font-size: 1.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */

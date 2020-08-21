@@ -1,5 +1,6 @@
 .about {
     background-color: #e61f5b;
+    margin-bottom: 4rem;
 
     &__header {
         text-align: center;
@@ -28,6 +29,13 @@
     &__svg {
         height: 5rem;
         width: 5rem;
+        margin-bottom: 5rem;
+        transition: all 1s ease;
+
+        &:hover {
+            height: 6rem;
+            width: 6rem;
+        }
     }
 
     &__blurb {
@@ -35,6 +43,7 @@
 
         h4 {
             font-size: 2rem;
+            margin-bottom: 3rem;
         }
 
         p {
