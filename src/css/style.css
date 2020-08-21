@@ -49,14 +49,16 @@ body {
 }
 
 .header {
-  height: 100vh;
-  background-image: linear-gradient(to right bottom, black, rgba(0, 0, 0, 0.3)), url("../img/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg");
+  background-image: linear-gradient(to right bottom, black, rgba(230, 31, 91, 0.3)), url("../img/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 4rem;
+}
+.header__content {
+  padding: 15rem 0;
 }
 .header__content--title {
   color: #e61f5b;
@@ -78,7 +80,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 15vh;
+  min-height: 11rem;
   background-color: #fff;
   position: fixed;
   z-index: 10;
@@ -139,7 +141,7 @@ nav {
     position: absolute;
     right: 0;
     height: 92vh;
-    top: 15vh;
+    top: 11rem;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -184,10 +186,49 @@ nav {
   transform: rotate(45deg) translate(-0.5rem, -0.6rem);
 }
 
+.about {
+  background-color: #e61f5b;
+}
+.about__header {
+  text-align: center;
+  color: #fff;
+  padding: 5rem 0;
+}
+.about__header h2 {
+  font-size: 6rem;
+}
+.about__header h3 {
+  font-size: 2.5rem;
+}
+.about__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+@media only screen and (max-width: 900px) {
+  .about__content {
+    grid-template-columns: 1fr;
+  }
+}
+.about__svg {
+  height: 5rem;
+  width: 5rem;
+}
+.about__blurb {
+  padding: 5rem;
+}
+.about__blurb h4 {
+  font-size: 2rem;
+}
+.about__blurb p {
+  font-size: 1.8rem;
+}
+
 .intro {
   display: flex;
   background-color: #ededed;
   padding: 10rem 0;
+  margin-bottom: 4rem;
 }
 @media only screen and (max-width: 700px) {
   .intro {
@@ -247,7 +288,7 @@ nav {
 .main {
   padding: 0 3rem;
   position: relative;
-  top: 15vh;
+  top: 11rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,7 @@
 .header {
-    height: 100vh;
     background-image: linear-gradient(to right bottom,
     rgba(0, 0, 0, 1),
-     rgba(0, 0, 0, 0.3)), url("../img/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg");
+     rgba(230, 31, 91, 0.3)), url("../img/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -11,6 +10,7 @@
     margin-bottom: 4rem;
 
     &__content {
+        padding: 15rem 0;
 
         &--title {
             color: #e61f5b;

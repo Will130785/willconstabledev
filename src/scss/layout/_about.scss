@@ -1,0 +1,44 @@
+.about {
+    background-color: #e61f5b;
+
+    &__header {
+        text-align: center;
+        color: #fff;
+        padding: 5rem 0;
+
+        h2 {
+            font-size: 6rem;
+        }
+
+        h3 {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+
+        @media only screen and (max-width: 900px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__svg {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    &__blurb {
+        padding: 5rem;
+
+        h4 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.8rem;
+        }
+    }
+}
