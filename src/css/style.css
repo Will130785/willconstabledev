@@ -187,6 +187,7 @@ nav {
 .intro {
   display: flex;
   background-color: #ededed;
+  padding: 10rem 0;
 }
 @media only screen and (max-width: 700px) {
   .intro {
@@ -203,7 +204,7 @@ nav {
   }
 }
 .intro__title h2 {
-  font-size: 4rem;
+  font-size: 6rem;
   text-align: right;
   color: #141939;
 }
@@ -235,6 +236,7 @@ nav {
   letter-spacing: 0.2rem;
   font-weight: bold;
   transition: all 0.4s ease;
+  margin-top: 5rem;
 }
 .intro__button:hover {
   cursor: pointer;
