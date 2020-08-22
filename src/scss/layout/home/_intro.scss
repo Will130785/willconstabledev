@@ -42,22 +42,4 @@
             color: #141939;
         }
     }
-
-    &__button {
-        border: .5rem solid #e61f5b;
-        background-color: rgba(0, 0, 0, 0);
-        color: #e61f5b;
-        padding: 2rem 8rem;
-        font-size: 2rem;
-        letter-spacing: .2rem;
-        font-weight: bold;
-        transition: all .4s ease;
-        margin-top: 5rem;
-
-        &:hover {
-            cursor: pointer;
-            color: #fff;
-            background-color: #e61f5b;
-        }
-    }
 }

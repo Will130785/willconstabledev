@@ -1,13 +1,16 @@
 @import "base/animations";
 @import "base/base";
 
+@import "components/button";
 @import "components/header";
 @import "components/navbar";
 
-@import "layout/about";
-@import "layout/footer";
-@import "layout/intro";
-@import "layout/main-layout";
-@import "layout/portfolio";
-@import "layout/start";
-@import "layout/testimonials";
+@import "layout/about/header";
+
+@import "layout/home/about";
+@import "layout/home/footer";
+@import "layout/home/intro";
+@import "layout/home/main-layout";
+@import "layout/home/portfolio";
+@import "layout/home/start";
+@import "layout/home/testimonials";

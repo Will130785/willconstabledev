@@ -57,6 +57,23 @@ a {
   color: black;
 }
 
+.btn {
+  border: 0.5rem solid #e61f5b;
+  background-color: rgba(0, 0, 0, 0);
+  color: #e61f5b;
+  padding: 2rem 8rem;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  transition: all 0.4s ease;
+  margin-top: 5rem;
+}
+.btn:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #e61f5b;
+}
+
 .header {
   background-image: linear-gradient(to right bottom, black, rgba(230, 31, 91, 0.3)), url("../img/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg");
   background-size: cover;
@@ -193,6 +210,39 @@ nav {
 
 .toggle .line3 {
   transform: rotate(45deg) translate(-0.5rem, -0.6rem);
+}
+
+.about-section__header {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 900px) {
+  .about-section__header {
+    flex-direction: column;
+  }
+}
+.about-section__header--left {
+  width: 50%;
+}
+@media only screen and (max-width: 900px) {
+  .about-section__header--left {
+    width: 100%;
+  }
+}
+.about-section__header--right {
+  width: 50%;
+  padding: 3rem;
+}
+@media only screen and (max-width: 900px) {
+  .about-section__header--right {
+    width: 100%;
+  }
+}
+.about-section__header--right p {
+  font-size: 3rem;
+}
+.about-section__header--img {
+  width: 100%;
 }
 
 .about {
@@ -335,22 +385,6 @@ nav {
   margin-bottom: 2rem;
   color: #141939;
 }
-.intro__button {
-  border: 0.5rem solid #e61f5b;
-  background-color: rgba(0, 0, 0, 0);
-  color: #e61f5b;
-  padding: 2rem 8rem;
-  font-size: 2rem;
-  letter-spacing: 0.2rem;
-  font-weight: bold;
-  transition: all 0.4s ease;
-  margin-top: 5rem;
-}
-.intro__button:hover {
-  cursor: pointer;
-  color: #fff;
-  background-color: #e61f5b;
-}
 
 .main {
   padding: 0 3rem;
@@ -410,22 +444,6 @@ nav {
 }
 .start__content h2 {
   font-size: 6rem;
-}
-.start__content--button {
-  border: 0.5rem solid #e61f5b;
-  background-color: rgba(0, 0, 0, 0);
-  color: #e61f5b;
-  padding: 2rem 8rem;
-  font-size: 2rem;
-  letter-spacing: 0.2rem;
-  font-weight: bold;
-  transition: all 0.4s ease;
-  margin-top: 5rem;
-}
-.start__content--button:hover {
-  cursor: pointer;
-  color: #fff;
-  background-color: #e61f5b;
 }
 
 .testimonials {
