@@ -1,0 +1,59 @@
+.footer {
+    position: relative;
+    top: 11rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+
+    @media only screen and (max-width: 900px) {
+        flex-direction: column;
+    }
+
+    &__about {
+
+        @media only screen and (max-width: 900px) {
+            margin-bottom: 5rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+            color: #e61f5b;
+            margin-bottom: 5rem;
+        }
+
+        p {
+            font-size: 1.8rem;
+        }
+
+        &--icon {
+            width: 3rem;
+            height: 3rem;
+            fill: #e61f5b;
+            margin-right: 1rem;
+        }
+
+        &--social {
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__services, &__links {
+
+        @media only screen and (max-width: 900px) {
+            margin-bottom: 5rem;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__link {
+        font-size: 1.6rem;
+    }
+
+    &__item {
+        margin-bottom: 1.5rem;
+    }
+}

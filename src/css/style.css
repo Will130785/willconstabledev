@@ -48,6 +48,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .header {
   background-image: linear-gradient(to right bottom, black, rgba(230, 31, 91, 0.3)), url("../img/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg");
   background-size: cover;
@@ -232,6 +241,56 @@ nav {
   font-size: 1.8rem;
 }
 
+.footer {
+  position: relative;
+  top: 11rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem;
+}
+@media only screen and (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .footer__about {
+    margin-bottom: 5rem;
+  }
+}
+.footer__about h2 {
+  font-size: 3rem;
+  color: #e61f5b;
+  margin-bottom: 5rem;
+}
+.footer__about p {
+  font-size: 1.8rem;
+}
+.footer__about--icon {
+  width: 3rem;
+  height: 3rem;
+  fill: #e61f5b;
+  margin-right: 1rem;
+}
+.footer__about--social {
+  margin-bottom: 5rem;
+}
+@media only screen and (max-width: 900px) {
+  .footer__services, .footer__links {
+    margin-bottom: 5rem;
+  }
+}
+.footer__services h3, .footer__links h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.footer__link {
+  font-size: 1.6rem;
+}
+.footer__item {
+  margin-bottom: 1.5rem;
+}
+
 .intro {
   display: flex;
   background-color: #ededed;
@@ -333,7 +392,7 @@ nav {
   background-position: center;
 }
 .portfolio__snaps--card-1 {
-  background-image: url("../img/andras-vas-Bd7gNnWJBku-unsplash.jpg");
+  background-image: url("../img/andras-vas-Bd7gNnWJBkU-unsplash.jpg");
 }
 .portfolio__snaps--card-2 {
   background-image: url("../img/daniel-korpai-8GDCzWrcE3M-unsplash.jpg");
