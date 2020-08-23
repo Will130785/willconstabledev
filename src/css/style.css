@@ -75,7 +75,7 @@ a {
 }
 
 .header {
-  background-image: linear-gradient(to right bottom, black, rgba(230, 31, 91, 0.3)), url("../img/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg");
+  background-image: linear-gradient(to right bottom, black, rgba(0, 0, 0, 0.3)), url("../img/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -212,9 +212,47 @@ nav {
   transform: rotate(45deg) translate(-0.5rem, -0.6rem);
 }
 
+.about-description {
+  background-color: #000000;
+  display: flex;
+  margin-bottom: 4rem;
+}
+@media only screen and (max-width: 900px) {
+  .about-description {
+    flex-direction: column-reverse;
+  }
+}
+.about-description__left {
+  width: 50%;
+  color: #fff;
+  padding: 3rem;
+}
+@media only screen and (max-width: 900px) {
+  .about-description__left {
+    width: 100%;
+  }
+}
+.about-description__left p {
+  font-size: 2rem;
+}
+.about-description__right {
+  width: 50%;
+  color: #e61f5b;
+  padding: 3rem;
+}
+@media only screen and (max-width: 900px) {
+  .about-description__right {
+    width: 100%;
+  }
+}
+.about-description__right h2 {
+  font-size: 8rem;
+}
+
 .about-section__header {
   display: flex;
   align-items: center;
+  margin-bottom: 4rem;
 }
 @media only screen and (max-width: 900px) {
   .about-section__header {
@@ -243,6 +281,62 @@ nav {
 }
 .about-section__header--img {
   width: 100%;
+}
+
+.about-interest {
+  background-color: #ededed;
+  text-align: center;
+}
+.about-interest__content {
+  padding: 5rem 0;
+}
+.about-interest__content h2 {
+  font-size: 6rem;
+}
+
+.testimonials.about-testimonials {
+  background-color: #e61f5b;
+}
+.testimonials.about-testimonials p {
+  color: #fff;
+}
+.testimonials.about-testimonials h2 {
+  color: #fff;
+}
+
+.about-why {
+  background-color: #ededed;
+  display: flex;
+  margin-bottom: 4rem;
+}
+@media only screen and (max-width: 900px) {
+  .about-why {
+    flex-direction: column;
+  }
+}
+.about-why__left {
+  width: 50%;
+  padding: 3rem;
+}
+@media only screen and (max-width: 900px) {
+  .about-why__left {
+    width: 100%;
+  }
+}
+.about-why__left h2 {
+  font-size: 8rem;
+}
+.about-why__right {
+  width: 50%;
+  padding: 3rem;
+}
+@media only screen and (max-width: 900px) {
+  .about-why__right {
+    width: 100%;
+  }
+}
+.about-why__right p {
+  font-size: 2rem;
 }
 
 .about {

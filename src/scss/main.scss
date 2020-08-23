@@ -5,7 +5,11 @@
 @import "components/header";
 @import "components/navbar";
 
+@import "layout/about/description";
 @import "layout/about/header";
+@import "layout/about/interest";
+@import "layout/about/testimonials";
+@import "layout/about/why";
 
 @import "layout/home/about";
 @import "layout/home/footer";
