@@ -75,7 +75,7 @@ a {
 }
 
 .header {
-  background-image: linear-gradient(to right bottom, black, rgba(0, 0, 0, 0.3)), url("../img/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg");
+  background-image: linear-gradient(to right bottom, black, rgba(0, 0, 0, 0.3)), url("../img/home/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -292,6 +292,9 @@ nav {
 }
 .about-interest__content h2 {
   font-size: 6rem;
+}
+.about-interest__content p {
+  font-size: 2rem;
 }
 
 .testimonials.about-testimonials {
@@ -520,13 +523,13 @@ nav {
   background-position: center;
 }
 .portfolio__snaps--card-1 {
-  background-image: url("../img/andras-vas-Bd7gNnWJBkU-unsplash.jpg");
+  background-image: url("../img/home/andras-vas-Bd7gNnWJBkU-unsplash.jpg");
 }
 .portfolio__snaps--card-2 {
-  background-image: url("../img/daniel-korpai-8GDCzWrcE3M-unsplash.jpg");
+  background-image: url("../img/home/daniel-korpai-8GDCzWrcE3M-unsplash.jpg");
 }
 .portfolio__snaps--card-3 {
-  background-image: url("../img/niclas-illg-wzVQp_NRIHg-unsplash.jpg");
+  background-image: url("../img/home/niclas-illg-wzVQp_NRIHg-unsplash.jpg");
 }
 
 .start {
@@ -584,6 +587,65 @@ nav {
 }
 .testimonials__content--pos {
   font-size: 1.8rem;
+}
+
+.service-header {
+  background-color: #e61f5b;
+  margin-bottom: 4rem;
+}
+.service-header__content {
+  padding: 20rem 0;
+  text-align: center;
+  color: #fff;
+}
+.service-header__content h1 {
+  font-size: 10rem;
+}
+.service-header__content p {
+  font-size: 3rem;
+}
+
+.service-services {
+  height: 70rem;
+  background-color: #ededed;
+  margin-bottom: 4rem;
+}
+.service-services__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 40%;
+}
+.service-services__heading h2 {
+  font-size: 6rem;
+}
+.service-services__heading h3 {
+  font-size: 2.5rem;
+}
+.service-services__snaps {
+  height: 60%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media only screen and (max-width: 900px) {
+  .service-services__snaps {
+    grid-template-columns: 1fr;
+  }
+}
+.service-services__snaps--card {
+  background-size: cover;
+  background-position: center;
+}
+.service-services__snaps--card-1 {
+  background-image: url("../img/services/ben-kolde-Ajcipx1VDXI-unsplash.jpg");
+}
+.service-services__snaps--card-2 {
+  background-image: url("../img/services/diego-ph-fIq0tET6llw-unsplash.jpg");
+}
+.service-services__snaps--card-3 {
+  background-image: url("../img/services/kobu-agency-0mletxmBcVQ-unsplash.jpg");
 }
 
 /*# sourceMappingURL=style.css.map */
