@@ -73,6 +73,14 @@ a {
   color: #fff;
   background-color: #e61f5b;
 }
+.btn-contact {
+  color: #fff;
+  border: 0.5rem solid #fff;
+}
+.btn-contact:hover {
+  color: #000;
+  background-color: #fff;
+}
 
 .header {
   background-image: linear-gradient(to right bottom, black, rgba(0, 0, 0, 0.3)), url("../img/home/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg");
@@ -342,6 +350,64 @@ nav {
   font-size: 2rem;
 }
 
+.contact {
+  background-color: #e61f5b;
+  margin-bottom: 4rem;
+  color: #fff;
+}
+.contact h1 {
+  font-size: 10rem;
+  text-align: center;
+}
+.contact p {
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+@media only screen and (max-width: 900px) {
+  .form-group {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+.form-input {
+  width: 45%;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 0.4rem solid #fff;
+  padding: 1rem;
+  font-size: 2rem;
+  color: #fff;
+}
+@media only screen and (max-width: 900px) {
+  .form-input {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+}
+
+.message-input {
+  height: 20rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 0.4rem solid #fff;
+  padding: 1rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
 .about {
   background-color: #e61f5b;
   margin-bottom: 4rem;
@@ -489,12 +555,12 @@ nav {
   top: 11rem;
 }
 
-.portfolio-port {
+.portfolio {
   height: 70rem;
   background-color: #ededed;
   margin-bottom: 4rem;
 }
-.portfolio-port__heading {
+.portfolio__heading {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -502,33 +568,33 @@ nav {
   text-align: center;
   height: 40%;
 }
-.portfolio-port__heading h2 {
+.portfolio__heading h2 {
   font-size: 6rem;
 }
-.portfolio-port__heading h3 {
+.portfolio__heading h3 {
   font-size: 2.5rem;
 }
-.portfolio-port__snaps {
+.portfolio__snaps {
   height: 60%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 @media only screen and (max-width: 900px) {
-  .portfolio-port__snaps {
+  .portfolio__snaps {
     grid-template-columns: 1fr;
   }
 }
-.portfolio-port__snaps--card {
+.portfolio__snaps--card {
   background-size: cover;
   background-position: center;
 }
-.portfolio-port__snaps--card-1 {
+.portfolio__snaps--card-1 {
   background-image: url("../img/home/andras-vas-Bd7gNnWJBkU-unsplash.jpg");
 }
-.portfolio-port__snaps--card-2 {
+.portfolio__snaps--card-2 {
   background-image: url("../img/home/daniel-korpai-8GDCzWrcE3M-unsplash.jpg");
 }
-.portfolio-port__snaps--card-3 {
+.portfolio__snaps--card-3 {
   background-image: url("../img/home/niclas-illg-wzVQp_NRIHg-unsplash.jpg");
 }
 
