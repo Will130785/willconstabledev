@@ -489,12 +489,12 @@ nav {
   top: 11rem;
 }
 
-.portfolio {
+.portfolio-port {
   height: 70rem;
   background-color: #ededed;
   margin-bottom: 4rem;
 }
-.portfolio__heading {
+.portfolio-port__heading {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -502,33 +502,33 @@ nav {
   text-align: center;
   height: 40%;
 }
-.portfolio__heading h2 {
+.portfolio-port__heading h2 {
   font-size: 6rem;
 }
-.portfolio__heading h3 {
+.portfolio-port__heading h3 {
   font-size: 2.5rem;
 }
-.portfolio__snaps {
+.portfolio-port__snaps {
   height: 60%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 @media only screen and (max-width: 900px) {
-  .portfolio__snaps {
+  .portfolio-port__snaps {
     grid-template-columns: 1fr;
   }
 }
-.portfolio__snaps--card {
+.portfolio-port__snaps--card {
   background-size: cover;
   background-position: center;
 }
-.portfolio__snaps--card-1 {
+.portfolio-port__snaps--card-1 {
   background-image: url("../img/home/andras-vas-Bd7gNnWJBkU-unsplash.jpg");
 }
-.portfolio__snaps--card-2 {
+.portfolio-port__snaps--card-2 {
   background-image: url("../img/home/daniel-korpai-8GDCzWrcE3M-unsplash.jpg");
 }
-.portfolio__snaps--card-3 {
+.portfolio-port__snaps--card-3 {
   background-image: url("../img/home/niclas-illg-wzVQp_NRIHg-unsplash.jpg");
 }
 
@@ -587,6 +587,68 @@ nav {
 }
 .testimonials__content--pos {
   font-size: 1.8rem;
+}
+
+.portfolio-port {
+  height: 100rem;
+  background-color: #e61f5b;
+  margin-bottom: 4rem;
+}
+.portfolio-port__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 20%;
+  color: #fff;
+}
+.portfolio-port__heading h2 {
+  font-size: 6rem;
+}
+.portfolio-port__heading h3 {
+  font-size: 2.5rem;
+}
+.portfolio-port__snaps {
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media only screen and (max-width: 900px) {
+  .portfolio-port__snaps {
+    grid-template-columns: 1fr;
+  }
+}
+.portfolio-port__snaps--card {
+  background-size: cover;
+  background-position: center;
+}
+.portfolio-port__snaps--card-1 {
+  background-image: url("../img/portfolio/ben-kolde-FaPxZ88yZrw-unsplash.jpg");
+}
+.portfolio-port__snaps--card-2 {
+  background-image: url("../img/portfolio/edho-pratama-yeB9jDmHm6M-unsplash.jpg");
+}
+.portfolio-port__snaps--card-3 {
+  background-image: url("../img/portfolio/gabriel-beaudry-70rHtD11NNk-unsplash.jpg");
+}
+.portfolio-port__snaps--card-4 {
+  background-image: url("../img/portfolio/luca-bravo-XJXWbfSo2f0-unsplash.jpg");
+}
+.portfolio-port__snaps--card-5 {
+  background-image: url("../img/portfolio/s-o-c-i-a-l-c-u-t-hCjo_bIkVig-unsplash.jpg");
+}
+.portfolio-port__snaps--card-6 {
+  background-image: url("../img/portfolio/szabo-viktor-r_r0VQfi5Pk-unsplash.jpg");
+}
+.portfolio-port__snaps--card-7 {
+  background-image: url("../img/portfolio/taras-shypka-iFSvn82XfGo-unsplash.jpg");
+}
+.portfolio-port__snaps--card-8 {
+  background-image: url("../img/portfolio/tracy-adams-TEemXOpR3cQ-unsplash.jpg");
+}
+.portfolio-port__snaps--card-9 {
+  background-image: url("../img/portfolio/william-iven-ir5lIkVFqC4-unsplash.jpg");
 }
 
 .service-header {
