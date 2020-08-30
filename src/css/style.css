@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -58,6 +58,7 @@ a {
 }
 
 .btn {
+  display: inline-block;
   border: 0.5rem solid #e61f5b;
   background-color: rgba(0, 0, 0, 0);
   color: #e61f5b;
@@ -80,6 +81,12 @@ a {
 .btn-contact:hover {
   color: #000;
   background-color: #fff;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5rem;
+  box-shadow: 1rem 2rem 2rem 1rem rgba(0, 0, 0, 0.3);
 }
 
 .header {
@@ -242,6 +249,7 @@ nav {
 }
 .about-description__left p {
   font-size: 2rem;
+  margin-bottom: 2rem;
 }
 .about-description__right {
   width: 50%;
@@ -254,7 +262,7 @@ nav {
   }
 }
 .about-description__right h2 {
-  font-size: 8rem;
+  font-size: 10rem;
 }
 
 .about-section__header {
@@ -411,6 +419,7 @@ nav {
 .about {
   background-color: #e61f5b;
   margin-bottom: 4rem;
+  padding: 4rem;
 }
 .about__header {
   text-align: center;
@@ -426,6 +435,7 @@ nav {
 .about__content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
   text-align: center;
 }
 @media only screen and (max-width: 900px) {
@@ -437,21 +447,17 @@ nav {
   height: 5rem;
   width: 5rem;
   margin-bottom: 5rem;
-  transition: all 1s ease;
-}
-.about__svg:hover {
-  height: 6rem;
-  width: 6rem;
 }
 .about__blurb {
-  padding: 5rem;
+  padding: 2rem;
 }
 .about__blurb h4 {
   font-size: 2rem;
   margin-bottom: 3rem;
 }
 .about__blurb p {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+  font-weight: 200;
 }
 
 .footer {

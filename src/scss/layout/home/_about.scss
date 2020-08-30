@@ -1,6 +1,7 @@
 .about {
     background-color: #e61f5b;
     margin-bottom: 4rem;
+    padding: 4rem;
 
     &__header {
         text-align: center;
@@ -19,6 +20,7 @@
     &__content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3rem;
         text-align: center;
 
         @media only screen and (max-width: 900px) {
@@ -30,16 +32,10 @@
         height: 5rem;
         width: 5rem;
         margin-bottom: 5rem;
-        transition: all 1s ease;
-
-        &:hover {
-            height: 6rem;
-            width: 6rem;
-        }
     }
 
     &__blurb {
-        padding: 5rem;
+        padding: 2rem;
 
         h4 {
             font-size: 2rem;
@@ -47,7 +43,8 @@
         }
 
         p {
-            font-size: 1.8rem;
+            font-size: 1.4rem;
+            font-weight: 200;
         }
     }
 }
