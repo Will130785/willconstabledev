@@ -1,5 +1,4 @@
 .portfolio-port {
-    height: 100rem;
     background-color: #e61f5b;
     margin-bottom: 4rem;
 
@@ -25,9 +24,31 @@
         height: 80%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 30rem);
 
         @media only screen and (max-width: 900px) {
             grid-template-columns: 1fr;
+            grid-template-rows: repeat(9, 30rem);
+        }
+
+        &--overlay {
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: all .4s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            &:hover {
+                background-color: rgba(0, 0, 0, .7);
+                opacity: 1;
+            }
+
+            h2 {
+                color: #fff;
+            }
         }
 
         &--card {
