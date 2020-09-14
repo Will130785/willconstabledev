@@ -27,3 +27,21 @@
         }
     }
 }
+
+.card-btn {
+    display: block;
+    margin-top: 4rem;
+    padding: 1.5rem 6rem;
+    background-color: #e61f5b;
+    color: #fff;
+    border-radius: 3rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+    transition: all .2s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #c4003b;
+    }
+}
+

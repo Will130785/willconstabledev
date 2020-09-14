@@ -1,0 +1,53 @@
+.extra-info {
+    background-color: #000;
+    color: #e61f5b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+
+    @media only screen and (max-width: 900px) {
+        flex-direction: column;
+    }
+
+    &__heading {
+        width: 50%;
+        text-align: center;
+        padding: 3rem;
+
+        @media only screen and (max-width: 700px) {
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 6rem;
+        }
+    }
+
+    &__content {
+        width: 50%;
+        padding: 3rem;
+
+        @media only screen and (max-width: 900px) {
+            width: 75%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            width: 100%;
+        }
+
+        &--main {
+            font-size: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+        &--name {
+            font-size: 2rem;
+        }
+
+        &--pos {
+            font-size: 1.8rem;
+        }
+
+    }
+}

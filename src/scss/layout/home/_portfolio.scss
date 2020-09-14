@@ -1,5 +1,5 @@
 .portfolio {
-    height: 70rem;
+    // height: 70rem;
     background-color: #ededed;
     margin-bottom: 4rem;
 
@@ -10,6 +10,7 @@
         justify-content: center;
         text-align: center;
         height: 40%;
+        padding: 4rem;
 
         h2 {
             font-size: 6rem;
@@ -24,10 +25,24 @@
         height: 60%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:  40rem;
+        position: relative;
+
+        h3 {
+            color: #e61f5b;
+            font-size: 3rem;
+            position: absolute;
+
+            @media only screen and (max-width: 900px) {
+                position: absolute;
+                left: 0;
+                padding: 2rem;
+            }
+        }
 
         @media only screen and (max-width: 900px) {
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(3, 30rem);
+            grid-template-rows: repeat(3, 40rem);
         }
 
         &--overlay {
@@ -39,37 +54,39 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            text-align: center;
             
             &:hover {
                 background-color: rgba(0, 0, 0, .7);
                 opacity: 1;
+                z-index: 10;
             }
 
             h2 {
                 color: #fff;
+                font-size: 3rem;
             }
         }
 
         &--card {
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
             display: flex;
             justify-content: center;
             align-items: flex-end;
-            z-index: 10;
 
             &-1 {
-                background-image: url("../img/home/andras-vas-Bd7gNnWJBkU-unsplash.jpg");
-
+                background-image: url("../img/logos/logo-big.jpg");
             }
 
             &-2 {
-                background-image: url("../img/home/daniel-korpai-8GDCzWrcE3M-unsplash.jpg");
+                background-image: url("../img/logos/sllogo72.jpg");
 
             }
 
             &-3 {
-                background-image: url("../img/home/niclas-illg-wzVQp_NRIHg-unsplash.jpg");
+                background-image: url("../img/logos/thai-orchid.png");
 
             }
         }

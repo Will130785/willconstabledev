@@ -83,10 +83,77 @@ a {
   background-color: #fff;
 }
 
+.card-btn {
+  display: block;
+  margin-top: 4rem;
+  padding: 1.5rem 6rem;
+  background-color: #e61f5b;
+  color: #fff;
+  border-radius: 3rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  transition: all 0.2s;
+}
+.card-btn:hover {
+  cursor: pointer;
+  background-color: #c4003b;
+}
+
 .card {
   background-color: #fff;
   border-radius: 5rem;
   box-shadow: 1rem 2rem 2rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.extra-info {
+  background-color: #000;
+  color: #e61f5b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+@media only screen and (max-width: 900px) {
+  .extra-info {
+    flex-direction: column;
+  }
+}
+.extra-info__heading {
+  width: 50%;
+  text-align: center;
+  padding: 3rem;
+}
+@media only screen and (max-width: 700px) {
+  .extra-info__heading {
+    width: 100%;
+  }
+}
+.extra-info__heading h2 {
+  font-size: 6rem;
+}
+.extra-info__content {
+  width: 50%;
+  padding: 3rem;
+}
+@media only screen and (max-width: 900px) {
+  .extra-info__content {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .extra-info__content {
+    width: 100%;
+  }
+}
+.extra-info__content--main {
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+}
+.extra-info__content--name {
+  font-size: 2rem;
+}
+.extra-info__content--pos {
+  font-size: 1.8rem;
 }
 
 .header {
@@ -99,12 +166,12 @@ a {
   margin-bottom: 4rem;
 }
 .header__content {
-  padding: 15rem 0;
+  padding: 15rem 5rem;
+  text-align: center;
 }
 .header__content--title {
   color: #e61f5b;
   font-size: 10rem;
-  text-align: center;
 }
 @media only screen and (max-width: 600px) {
   .header__content--title {
@@ -112,7 +179,6 @@ a {
   }
 }
 .header__content--sub {
-  text-align: center;
   font-size: 3rem;
   color: #fff;
 }
@@ -124,7 +190,7 @@ nav {
   min-height: 11rem;
   background-color: #fff;
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   width: 100%;
 }
 
@@ -441,6 +507,7 @@ nav {
 @media only screen and (max-width: 900px) {
   .about__content {
     grid-template-columns: 1fr;
+    grid-row-gap: 10rem;
   }
 }
 .about__svg {
@@ -450,13 +517,17 @@ nav {
 }
 .about__blurb {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 .about__blurb h4 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 3rem;
 }
 .about__blurb p {
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: 200;
 }
 
@@ -562,7 +633,6 @@ nav {
 }
 
 .portfolio {
-  height: 70rem;
   background-color: #ededed;
   margin-bottom: 4rem;
 }
@@ -573,6 +643,7 @@ nav {
   justify-content: center;
   text-align: center;
   height: 40%;
+  padding: 4rem;
 }
 .portfolio__heading h2 {
   font-size: 6rem;
@@ -584,11 +655,25 @@ nav {
   height: 60%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 40rem;
+  position: relative;
+}
+.portfolio__snaps h3 {
+  color: #e61f5b;
+  font-size: 3rem;
+  position: absolute;
+}
+@media only screen and (max-width: 900px) {
+  .portfolio__snaps h3 {
+    position: absolute;
+    left: 0;
+    padding: 2rem;
+  }
 }
 @media only screen and (max-width: 900px) {
   .portfolio__snaps {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 30rem);
+    grid-template-rows: repeat(3, 40rem);
   }
 }
 .portfolio__snaps--overlay {
@@ -600,30 +685,33 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .portfolio__snaps--overlay:hover {
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 1;
+  z-index: 10;
 }
 .portfolio__snaps--overlay h2 {
   color: #fff;
+  font-size: 3rem;
 }
 .portfolio__snaps--card {
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  z-index: 10;
 }
 .portfolio__snaps--card-1 {
-  background-image: url("../img/home/andras-vas-Bd7gNnWJBkU-unsplash.jpg");
+  background-image: url("../img/logos/logo-big.jpg");
 }
 .portfolio__snaps--card-2 {
-  background-image: url("../img/home/daniel-korpai-8GDCzWrcE3M-unsplash.jpg");
+  background-image: url("../img/logos/sllogo72.jpg");
 }
 .portfolio__snaps--card-3 {
-  background-image: url("../img/home/niclas-illg-wzVQp_NRIHg-unsplash.jpg");
+  background-image: url("../img/logos/thai-orchid.png");
 }
 
 .start {
