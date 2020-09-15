@@ -40,6 +40,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            text-align: center;
             
             &:hover {
                 background-color: rgba(0, 0, 0, .7);
@@ -48,7 +49,8 @@
 
             h2 {
                 color: #fff;
-            }
+                font-size: 3rem;
+            } 
         }
 
         &--card {
@@ -56,17 +58,17 @@
             background-position: center;
 
             &-1 {
-                background-image: url("../img/portfolio/ben-kolde-FaPxZ88yZrw-unsplash.jpg");
+                background-image: url("../img/logos/logo-big.jpg");
 
             }
 
             &-2 {
-                background-image: url("../img/portfolio/edho-pratama-yeB9jDmHm6M-unsplash.jpg");
+                background-image: url("../img/logos/sllogo72.jpg");
 
             }
 
             &-3 {
-                background-image: url("../img/portfolio/gabriel-beaudry-70rHtD11NNk-unsplash.jpg");
+                background-image: url("../img/logos/thai-orchid.png");
 
             }
 

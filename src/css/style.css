@@ -817,6 +817,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .portfolio-port__snaps--overlay:hover {
   background-color: rgba(0, 0, 0, 0.7);
@@ -824,19 +825,20 @@ nav {
 }
 .portfolio-port__snaps--overlay h2 {
   color: #fff;
+  font-size: 3rem;
 }
 .portfolio-port__snaps--card {
   background-size: cover;
   background-position: center;
 }
 .portfolio-port__snaps--card-1 {
-  background-image: url("../img/portfolio/ben-kolde-FaPxZ88yZrw-unsplash.jpg");
+  background-image: url("../img/logos/logo-big.jpg");
 }
 .portfolio-port__snaps--card-2 {
-  background-image: url("../img/portfolio/edho-pratama-yeB9jDmHm6M-unsplash.jpg");
+  background-image: url("../img/logos/sllogo72.jpg");
 }
 .portfolio-port__snaps--card-3 {
-  background-image: url("../img/portfolio/gabriel-beaudry-70rHtD11NNk-unsplash.jpg");
+  background-image: url("../img/logos/thai-orchid.png");
 }
 .portfolio-port__snaps--card-4 {
   background-image: url("../img/portfolio/luca-bravo-XJXWbfSo2f0-unsplash.jpg");
