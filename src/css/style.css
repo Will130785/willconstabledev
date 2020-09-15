@@ -253,12 +253,18 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     width: 100%;
     transform: translateX(100%);
   }
 
   .nav-links li {
     opacity: 0;
+    margin-bottom: 8rem;
+  }
+
+  .nav-links a {
+    font-size: 3rem;
   }
 
   .burger {
@@ -849,6 +855,80 @@ nav {
 }
 .portfolio-port__snaps--card-9 {
   background-image: url("../img/portfolio/william-iven-ir5lIkVFqC4-unsplash.jpg");
+}
+
+.port {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media only screen and (max-width: 900px) {
+  .port {
+    grid-template-columns: 1fr;
+  }
+}
+.port__pic--img {
+  width: 100%;
+}
+.port__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  color: #e61f5b;
+}
+.port__info h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.port__info h4 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.port__info p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.port__tech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e61f5b;
+  color: #fff;
+}
+@media only screen and (max-width: 900px) {
+  .port__tech {
+    flex-direction: column;
+  }
+}
+.port__tech--left {
+  width: 50%;
+  text-align: center;
+  padding: 3rem;
+}
+@media only screen and (max-width: 700px) {
+  .port__tech--left {
+    width: 100%;
+  }
+}
+.port__tech--left h2 {
+  font-size: 6rem;
+}
+.port__tech--right {
+  width: 50%;
+  padding: 3rem;
+}
+@media only screen and (max-width: 700px) {
+  .port__tech--right {
+    width: 100%;
+  }
+}
+.port__tech--right ul {
+  text-align: center;
+  margin-top: 4rem;
+}
+.port__tech--right li {
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .service-header {
