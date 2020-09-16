@@ -1,0 +1,44 @@
+.service-section__web {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    color: #e61f5b;
+    margin-bottom: 20rem;
+
+    @media only screen and (max-width: 900px) {
+        flex-direction: column;
+    }
+
+    &--left {
+        width: 50%;
+        @media only screen and (max-width: 900px) {
+            width: 60%;
+            margin-bottom: 5rem;
+        }
+    }
+
+    &--right {
+        width: 50%;
+        padding: 3rem;
+        text-align: right;
+
+        @media only screen and (max-width: 900px) {
+            width: 100%;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &--img {
+        width: 100%;
+    }
+}

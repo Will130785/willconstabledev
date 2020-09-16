@@ -6,6 +6,11 @@
     align-items: center;
     margin-bottom: 4rem;
 
+    &__about {
+        background-color: #e61f5b;
+        color: #000;
+    }
+
     @media only screen and (max-width: 900px) {
         flex-direction: column;
     }

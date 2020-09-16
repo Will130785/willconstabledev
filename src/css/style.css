@@ -113,6 +113,10 @@ a {
   align-items: center;
   margin-bottom: 4rem;
 }
+.extra-info__about {
+  background-color: #e61f5b;
+  color: #000;
+}
 @media only screen and (max-width: 900px) {
   .extra-info {
     flex-direction: column;
@@ -428,6 +432,7 @@ nav {
 }
 .about-why__right p {
   font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .contact {
@@ -806,7 +811,7 @@ nav {
 @media only screen and (max-width: 900px) {
   .portfolio-port__snaps {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, 30rem);
+    grid-template-rows: repeat(9, 40rem);
   }
 }
 .portfolio-port__snaps--overlay {
@@ -934,6 +939,50 @@ nav {
   margin-bottom: 2rem;
 }
 
+.service-section__cons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+  color: #e61f5b;
+  margin-bottom: 20rem;
+}
+@media only screen and (max-width: 900px) {
+  .service-section__cons {
+    flex-direction: column;
+  }
+}
+.service-section__cons--left {
+  width: 50%;
+}
+@media only screen and (max-width: 900px) {
+  .service-section__cons--left {
+    width: 60%;
+    margin-bottom: 5rem;
+  }
+}
+.service-section__cons--right {
+  width: 50%;
+  padding: 3rem;
+  text-align: right;
+}
+@media only screen and (max-width: 900px) {
+  .service-section__cons--right {
+    width: 100%;
+    text-align: center;
+  }
+}
+.service-section__cons--right h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.service-section__cons--right li {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.service-section__cons--img {
+  width: 100%;
+}
+
 .service-header {
   background-color: #e61f5b;
   margin-bottom: 4rem;
@@ -979,6 +1028,32 @@ nav {
     grid-template-columns: 1fr;
   }
 }
+.service-services__snaps--overlay {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+.service-services__snaps--overlay:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+  z-index: 10;
+}
+.service-services__snaps--overlay h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.service-services__snaps--overlay p {
+  color: #fff;
+  font-size: 1.5rem;
+}
 .service-services__snaps--card {
   background-size: cover;
   background-position: center;
@@ -991,6 +1066,93 @@ nav {
 }
 .service-services__snaps--card-3 {
   background-image: url("../img/services/kobu-agency-0mletxmBcVQ-unsplash.jpg");
+}
+
+.service-section__software {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+  color: #e61f5b;
+  margin-bottom: 20rem;
+}
+@media only screen and (max-width: 900px) {
+  .service-section__software {
+    flex-direction: column-reverse;
+  }
+}
+.service-section__software--right {
+  width: 50%;
+}
+@media only screen and (max-width: 900px) {
+  .service-section__software--right {
+    width: 60%;
+    margin-bottom: 5rem;
+  }
+}
+.service-section__software--left {
+  width: 50%;
+  padding: 3rem;
+}
+@media only screen and (max-width: 900px) {
+  .service-section__software--left {
+    width: 100%;
+    text-align: center;
+  }
+}
+.service-section__software--left h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.service-section__software--left li {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.service-section__software--img {
+  width: 100%;
+}
+
+.service-section__web {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+  color: #e61f5b;
+  margin-bottom: 20rem;
+}
+@media only screen and (max-width: 900px) {
+  .service-section__web {
+    flex-direction: column;
+  }
+}
+.service-section__web--left {
+  width: 50%;
+}
+@media only screen and (max-width: 900px) {
+  .service-section__web--left {
+    width: 60%;
+    margin-bottom: 5rem;
+  }
+}
+.service-section__web--right {
+  width: 50%;
+  padding: 3rem;
+  text-align: right;
+}
+@media only screen and (max-width: 900px) {
+  .service-section__web--right {
+    width: 100%;
+    text-align: center;
+  }
+}
+.service-section__web--right h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.service-section__web--right li {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.service-section__web--img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
