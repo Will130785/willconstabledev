@@ -1000,7 +1000,6 @@ nav {
 }
 
 .service-services {
-  height: 70rem;
   background-color: #ededed;
   margin-bottom: 4rem;
 }
@@ -1026,6 +1025,7 @@ nav {
 @media only screen and (max-width: 900px) {
   .service-services__snaps {
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 40rem);
   }
 }
 .service-services__snaps--overlay {
