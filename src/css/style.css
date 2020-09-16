@@ -789,6 +789,7 @@ nav {
   text-align: center;
   height: 20%;
   color: #fff;
+  padding: 5rem;
 }
 .portfolio-port__heading h2 {
   font-size: 6rem;
@@ -841,22 +842,22 @@ nav {
   background-image: url("../img/logos/thai-orchid.png");
 }
 .portfolio-port__snaps--card-4 {
-  background-image: url("../img/portfolio/luca-bravo-XJXWbfSo2f0-unsplash.jpg");
+  background-image: url("../img/logos/twinelectric.jpg");
 }
 .portfolio-port__snaps--card-5 {
-  background-image: url("../img/portfolio/s-o-c-i-a-l-c-u-t-hCjo_bIkVig-unsplash.jpg");
+  background-image: url("../img/logos/logo-big.jpg");
 }
 .portfolio-port__snaps--card-6 {
-  background-image: url("../img/portfolio/szabo-viktor-r_r0VQfi5Pk-unsplash.jpg");
+  background-image: url("../img/logos/memory.png");
 }
 .portfolio-port__snaps--card-7 {
-  background-image: url("../img/portfolio/taras-shypka-iFSvn82XfGo-unsplash.jpg");
+  background-image: url("../img/logos/outnin.png");
 }
 .portfolio-port__snaps--card-8 {
-  background-image: url("../img/portfolio/tracy-adams-TEemXOpR3cQ-unsplash.jpg");
+  background-image: url("../img/logos/willconstable.png");
 }
 .portfolio-port__snaps--card-9 {
-  background-image: url("../img/portfolio/william-iven-ir5lIkVFqC4-unsplash.jpg");
+  background-image: url("../img/logos/furnish.png");
 }
 
 .port {
